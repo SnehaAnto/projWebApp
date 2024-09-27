@@ -1,0 +1,100 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+h1, h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.calendar-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-table {
+    table-layout: fixed;
+}
+
+.calendar-table th {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.calendar-table td {
+    height: 120px;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.calendar-day {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.calendar-date {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.calendar-hours {
+    font-size: 0.9rem;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+.log-hours-btn {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.calendar-day-cell {
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+}
+
+.calendar-day-cell.other-month {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 767px) {
+    .calendar-table td {
+        height: 100px;
+    }
+
+    .calendar-date {
+        font-size: 1rem;
+    }
+
+    .calendar-hours {
+        font-size: 0.8rem;
+    }
+
+    .log-hours-btn {
+        font-size: 0.7rem;
+        padding: 1px 3px;
+    }
+}
