@@ -15,4 +15,20 @@ export class TimesheetService {
     async findAll(): Promise<Timesheet[]> {
         return this.timesheetModel.find().exec();
     }
+
+    async delete(id) {
+       const result = await this.timesheetModel.findByIdAndDelete(id).exec();
+       console.log("Deleted", result)
+       return result
+    }
+    
+    async update(id, createTimesheetDto){
+        const result = await this.timesheetModel.findByIdAndUpdate(id, createTimesheetDto).exec();
+        return result
+    }
+
+    async updatethis(id, createTimesheetDto){
+        const result = await this.timesheetModel.findByIdAndUpdate(id, createTimesheetDto).exec();
+        return result
+    }
 }

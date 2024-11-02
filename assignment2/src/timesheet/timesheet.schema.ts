@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 @Schema()
 export class Timesheet extends Document {
     @Prop({ required: true })
-    date: Date;
+    date: string;
 
     @Prop({ required: true })
     project: string;
